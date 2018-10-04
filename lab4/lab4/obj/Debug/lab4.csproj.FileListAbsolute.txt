@@ -1,0 +1,6 @@
+c:\users\1710526\documents\visual studio 2013\Projects\lab4\lab4\bin\Debug\lab4.exe.config
+c:\users\1710526\documents\visual studio 2013\Projects\lab4\lab4\bin\Debug\lab4.exe
+c:\users\1710526\documents\visual studio 2013\Projects\lab4\lab4\bin\Debug\lab4.pdb
+c:\users\1710526\documents\visual studio 2013\Projects\lab4\lab4\obj\Debug\lab4.csprojResolveAssemblyReference.cache
+c:\users\1710526\documents\visual studio 2013\Projects\lab4\lab4\obj\Debug\lab4.exe
+c:\users\1710526\documents\visual studio 2013\Projects\lab4\lab4\obj\Debug\lab4.pdb
