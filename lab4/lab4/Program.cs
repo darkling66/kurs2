@@ -1,50 +1,59 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab_3_1
+namespace Lab_4
 {
-    public delegate double FuncDelegate(double x);
     class Program
     {
-        public static double QuadCentral(double a, double b, int n, FuncDelegate func)
+        const double StartX = 10.3;
+        const double dX = 0.7;
+        static double Function(double x)
         {
-            double h = (b - a) / n;
-            double q = 0;
-            for (double x = a; x < b; x += h)
-            {
-                q += func(x + h / 2);
-            }
-            return q * h;
-        }
-        static double f1(double x)
-        {
-            return (Math.Pow(Math.Sin(x * 2), 3) + 45 + (5 * x)) / (Math.Pow((2 * (2 * x)), 4) + (4 * x));
-        }
-
-        static double f2(double x)
-        {
-            return  Math.Sqrt((56 * (x)) + ((x + x + (Math.Sin(x * x))) / 5 - Math.Cos(x * x)));
+            return 23 * Math.Pow(Math.Sin(Math.Pow(2.76 * x, 3)) * Math.Pow(0.5 * x, 5), 2) + 2 * (2.76 * x) + Math.Cos((2.76 * x) * (0.5 * x));
         }
         static void Main(string[] args)
         {
-            Console.Write("Введiть початок вiдрiзку iнтегрування a: ");
-            string sa = Console.ReadLine();
-            double a = double.Parse(sa);
-            Console.Write("Введiть кiнець вiдрiзку iнтегрування b: ");
-            string sb = Console.ReadLine();
-            double b = double.Parse(sb);
-            Console.Write("Введiть кiлькiсть дiлянок n: ");
-            string sn = Console.ReadLine();
-            int n = int.Parse(sn);
-            FuncDelegate[] funcs = { f1, f2 };
-            foreach (FuncDelegate f in funcs)
+            double[] arr = new double[10];
+            double x = StartX;
+            for (int i = arr.GetLowerBound(0); i <= arr.GetUpperBound(0); i++)
             {
-                double r = QuadCentral(a, b, n, f);
-                Console.WriteLine("Integral: [{0}, {1}] = {2}", a, b, r);
+
+                arr[i] = Function(x);
+                x += dX;
             }
+            Array.Sort(arr);
+            Array.Reverse(arr);
+            Console.WriteLine("Вiдсортованi за спаданням значення масиву: ");
+            for (int i = arr.GetLowerBound(0); i <= arr.GetUpperBound(0); i++)
+            {
+                Console.WriteLine("arr[{0:00}] = {1:0.0000}", i, arr[i]);
+            }
+            double aMin = arr[arr.GetUpperBound(0)];
+            double aMax = arr[arr.GetLowerBound(0)];
+            double aAvg = 0;
+            double n = 0;
+            double sum = 0;
+            for (int i = arr.GetLowerBound(0); i <= arr.GetUpperBound(0); i++)
+            {
+                aAvg += arr[i];
+            }
+            aAvg = aAvg / arr.GetLength(0);
+            for (int i = arr.GetLowerBound(0); i <= arr.GetUpperBound(0); i++)
+            {
+               
+                if (arr[i] >= aMin && arr[i] <= aMin + 0.1 * aMin)
+                {
+                    sum += arr[i];
+                }
+            }
+            Console.WriteLine("Мiнiмальне значення масиву: {0:0.0000}", aMin);
+            Console.WriteLine("Максимальне значення масиву: {0:0.0000}", aMax);
+            Console.WriteLine("Середнє значення масиву: {0:0.0000}", aAvg);
+            Console.WriteLine("Сума елементiв в дiапазонi: {0}", sum);
+            Console.ReadKey(true);
         }
     }
 }
