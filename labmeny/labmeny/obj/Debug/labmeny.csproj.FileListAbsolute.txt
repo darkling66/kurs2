@@ -1,0 +1,6 @@
+c:\users\1710526\documents\visual studio 2013\Projects\labmeny\labmeny\bin\Debug\labmeny.exe.config
+c:\users\1710526\documents\visual studio 2013\Projects\labmeny\labmeny\bin\Debug\labmeny.exe
+c:\users\1710526\documents\visual studio 2013\Projects\labmeny\labmeny\bin\Debug\labmeny.pdb
+c:\users\1710526\documents\visual studio 2013\Projects\labmeny\labmeny\obj\Debug\labmeny.csprojResolveAssemblyReference.cache
+c:\users\1710526\documents\visual studio 2013\Projects\labmeny\labmeny\obj\Debug\labmeny.exe
+c:\users\1710526\documents\visual studio 2013\Projects\labmeny\labmeny\obj\Debug\labmeny.pdb

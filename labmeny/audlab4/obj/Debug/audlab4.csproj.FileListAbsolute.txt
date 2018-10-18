@@ -1,0 +1,5 @@
+c:\Users\1710526\documents\visual studio 2013\Projects\labmeny\audlab4\bin\Debug\audlab4.exe.config
+c:\Users\1710526\documents\visual studio 2013\Projects\labmeny\audlab4\bin\Debug\audlab4.exe
+c:\Users\1710526\documents\visual studio 2013\Projects\labmeny\audlab4\bin\Debug\audlab4.pdb
+c:\Users\1710526\documents\visual studio 2013\Projects\labmeny\audlab4\obj\Debug\audlab4.exe
+c:\Users\1710526\documents\visual studio 2013\Projects\labmeny\audlab4\obj\Debug\audlab4.pdb
