@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,17 +11,17 @@ namespace Lab_3_1
     {
         static int Menu()
         {
-            Console.WriteLine("Обчислення інтегралу");
-            Console.WriteLine("0. Метод лівих прямокутників");
-            Console.WriteLine("1. Метод правих прямокутників");
-            Console.WriteLine("2. Метод центральних прямокутників");
+            Console.WriteLine("Обчислення iнтегралу");
+            Console.WriteLine("0. Метод лiвих прямокутникiв");
+            Console.WriteLine("1. Метод правих прямокутникiв");
+            Console.WriteLine("2. Метод центральних прямокутникiв");
             var res = Console.ReadLine();
             return Convert.ToInt32(res);
         }
 
         public static double QuadCentral(double a, double b, double n, FuncDelegate func)
         {
-            Console.WriteLine("Метод центральних прямокутників");
+            Console.WriteLine("Метод центральних прямокутникiв");
             double h = (b - a) / n;
             double q = 0;
             for (double x = a; x < b; x += h)
@@ -33,7 +33,7 @@ namespace Lab_3_1
 
         public static double QuadLeft(double a, double b, double n, FuncDelegate func)
         {
-            Console.WriteLine("---------------------Метод лівих прямокутників------------------");
+            Console.WriteLine("Метод лiвих прямокутникiв");
             double h = (b - a) / n;
             double y1;
             double x1;
@@ -49,7 +49,7 @@ namespace Lab_3_1
 
         public static double QuadRight(double a, double b, double n, FuncDelegate func)
         {
-            Console.WriteLine("---------------------Метод правих прямокутників------------------");
+            Console.WriteLine("Метод правих прямокутникiв");
             double h = (b - a) / n;
             double y1;
             double x1;
@@ -71,18 +71,19 @@ namespace Lab_3_1
         }
         static void Main(string[] args)
         {
-            Console.Write("Введiть початок вiдрiзку iнтегрування a: ");
-            string sa = Console.ReadLine();
-            double a = double.Parse(sa);
-            Console.Write("Введiть кiнець вiдрiзку iнтегрування b: ");
-            string sb = Console.ReadLine();
-            double b = double.Parse(sb);
-            Console.Write("Введiть кiлькiсть дiлянок n: ");
-            string sn = Console.ReadLine();
-            double n = double.Parse(sn);
             QuadDelegate[] menu = { QuadLeft, QuadRight, QuadCentral };
             while (true)
             {
+                Console.Write("Введiть початок вiдрiзку iнтегрування a: ");
+                string sa = Console.ReadLine();
+                double a = double.Parse(sa);
+                Console.Write("Введiть кiнець вiдрiзку iнтегрування b: ");
+                string sb = Console.ReadLine();
+                double b = double.Parse(sb);
+                Console.Write("Введiть кiлькiсть дiлянок n: ");
+                string sn = Console.ReadLine();
+                double n = double.Parse(sn);
+         
                 QuadDelegate q = menu[Menu()];
                 double r = q(a, b, n, F);
                 Console.WriteLine("Integral: [{0}, {1}] = {2}", a, b, r);
@@ -90,4 +91,5 @@ namespace Lab_3_1
             }
         }
     }
+}
 }
