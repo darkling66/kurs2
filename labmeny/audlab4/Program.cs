@@ -23,17 +23,17 @@ namespace Lab_4
         static void Main(string[] args)
         {
             double x = StartX;
-            double y = StartY;
             double[,] arr = new double[3, 3];
             for (int i = arr.GetLowerBound(0); i <= arr.GetUpperBound(0); i++)
             {
+                double y = StartY;
                 for (int j = arr.GetLowerBound(1); j <= arr.GetUpperBound(1); j++)
                 {
                     arr[i, j] = Function2(x,y);
                     x += dX;
                     y += dY;
-                    arr[i, j] = Math.Round(arr[i, j], 4);
-                    Console.Write(" " + arr[i, j]);
+                   // arr[i, j] = Math.Round(arr[i, j], 4);
+                    Console.Write("{0:###.0000}\t", arr[i, j]);
                 }
                 Console.WriteLine();
             }
