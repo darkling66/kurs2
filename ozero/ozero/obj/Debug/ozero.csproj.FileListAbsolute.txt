@@ -1,0 +1,6 @@
+c:\users\1710526\documents\visual studio 2013\Projects\ozero\ozero\bin\Debug\ozero.exe.config
+c:\users\1710526\documents\visual studio 2013\Projects\ozero\ozero\bin\Debug\ozero.exe
+c:\users\1710526\documents\visual studio 2013\Projects\ozero\ozero\bin\Debug\ozero.pdb
+c:\users\1710526\documents\visual studio 2013\Projects\ozero\ozero\obj\Debug\ozero.csprojResolveAssemblyReference.cache
+c:\users\1710526\documents\visual studio 2013\Projects\ozero\ozero\obj\Debug\ozero.exe
+c:\users\1710526\documents\visual studio 2013\Projects\ozero\ozero\obj\Debug\ozero.pdb
