@@ -1,0 +1,8 @@
+C:\Users\User\source\repos\C#\Lab6\LibLake\bin\Debug\LibLake.dll
+C:\Users\User\source\repos\C#\Lab6\LibLake\bin\Debug\LibLake.pdb
+C:\Users\User\source\repos\C#\Lab6\LibLake\bin\Debug\Exceptions.dll
+C:\Users\User\source\repos\C#\Lab6\LibLake\bin\Debug\Exceptions.pdb
+C:\Users\User\source\repos\C#\Lab6\LibLake\obj\Debug\LibLake.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\C#\Lab6\LibLake\obj\Debug\LibLake.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\C#\Lab6\LibLake\obj\Debug\LibLake.dll
+C:\Users\User\source\repos\C#\Lab6\LibLake\obj\Debug\LibLake.pdb

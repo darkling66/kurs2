@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\C#\Lab6\LibBigLake\bin\Debug\LibBigLake.dll
+C:\Users\User\source\repos\C#\Lab6\LibBigLake\bin\Debug\LibBigLake.pdb
+C:\Users\User\source\repos\C#\Lab6\LibBigLake\bin\Debug\Exceptions.dll
+C:\Users\User\source\repos\C#\Lab6\LibBigLake\bin\Debug\LibLake.dll
+C:\Users\User\source\repos\C#\Lab6\LibBigLake\bin\Debug\Exceptions.pdb
+C:\Users\User\source\repos\C#\Lab6\LibBigLake\bin\Debug\LibLake.pdb
+C:\Users\User\source\repos\C#\Lab6\LibBigLake\obj\Debug\LibBigLake.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\C#\Lab6\LibBigLake\obj\Debug\LibBigLake.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\C#\Lab6\LibBigLake\obj\Debug\LibBigLake.dll
+C:\Users\User\source\repos\C#\Lab6\LibBigLake\obj\Debug\LibBigLake.pdb
