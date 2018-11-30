@@ -1,4 +1,4 @@
-﻿namespace Lab8
+namespace Lab8
 {
     partial class MainForm
     {
@@ -28,19 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbLakeInfo = new System.Windows.Forms.TextBox();
             this.btnAddLake = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.lbLakeInfo = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
-            // 
-            // tbLakeInfo
-            // 
-            this.tbLakeInfo.Location = new System.Drawing.Point(11, 10);
-            this.tbLakeInfo.Multiline = true;
-            this.tbLakeInfo.Name = "tbLakeInfo";
-            this.tbLakeInfo.ReadOnly = true;
-            this.tbLakeInfo.Size = new System.Drawing.Size(459, 239);
-            this.tbLakeInfo.TabIndex = 0;
             // 
             // btnAddLake
             // 
@@ -62,28 +53,33 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // lbLakeInfo
+            // 
+            this.lbLakeInfo.FormattingEnabled = true;
+            this.lbLakeInfo.Location = new System.Drawing.Point(14, 10);
+            this.lbLakeInfo.Name = "lbLakeInfo";
+            this.lbLakeInfo.Size = new System.Drawing.Size(458, 238);
+            this.lbLakeInfo.TabIndex = 3;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 261);
+            this.Controls.Add(this.lbLakeInfo);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnAddLake);
-            this.Controls.Add(this.tbLakeInfo);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лабораторна робота №8";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox tbLakeInfo;
         private System.Windows.Forms.Button btnAddLake;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.ListBox lbLakeInfo;
     }
 }
 
