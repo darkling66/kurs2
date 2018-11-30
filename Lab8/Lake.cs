@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +12,9 @@ namespace Lab8
         private int weidth;
         private int age;
         private int pollution;
+
         public string Type { get; set; }
+
         public string Name { get; set; }
 
         public int Depth
@@ -26,6 +28,7 @@ namespace Lab8
                     throw new InvalidDepthException();
             }
         }
+
         public int Weidth
         {
             get { return weidth; }
@@ -65,7 +68,7 @@ namespace Lab8
         public override string ToString()
         {
             return string.Format(
-                "Данные про Озеро:\n" +
+                "Данные про озеро:\n" +
                 "Вид: {0}\n" +
                 "Глубина: {1} м\n" +
                 "Ширина: {2} км\n" +
@@ -81,18 +84,22 @@ namespace Lab8
     {
         public LakeException(string message) : base(message) { }
     }
+
     public class InvalidDepthException : LakeException
     {
         public InvalidDepthException() : base("Invalid depth input") { }
     }
+
     public class InvalidWeidthException : LakeException
     {
         public InvalidWeidthException() : base("Invalid weidth input") { }
     }
+
     public class InvalidAgeException : LakeException
     {
         public InvalidAgeException() : base("Invalid age input") { }
     }
+
     public class InvalidPollutionException : LakeException
     {
         public InvalidPollutionException() : base("Invalid pollution input") { }
