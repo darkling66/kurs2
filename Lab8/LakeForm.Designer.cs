@@ -1,4 +1,4 @@
-﻿namespace Lab8
+namespace Lab8
 {
     partial class LakeForm
     {
