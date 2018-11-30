@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +15,11 @@ namespace Lab8
         public MainForm()
         {
             InitializeComponent();
+            Lake lake = new Lake();
+            List<Lake> lakes = new List<Lake>();
+            lbLakeInfo.DisplayMember = "Name";
+            lbLakeInfo.ValueMember = "Value";
+            lbLakeInfo.SelectedIndexChanged += lbLakeInfo_SelectedIndexChanged;
         }
 
         private void btnAddLake_Click(object sender, EventArgs e)
@@ -23,15 +28,7 @@ namespace Lab8
             LakeForm lf = new LakeForm(lake);
             if(lf.ShowDialog() == DialogResult.OK)
             {
-                tbLakeInfo.Text += string.Format(
-                "Данные про Озеро:\r\n" +
-                "Вид: {0}\r\n" +
-                "Глубина: {1} м\r\n" +
-                "Ширина: {2} км\r\n" +
-                "Имя: {3}\r\n" +
-                "Возраст: {4} млн\r\n" +
-                "Загрязненность: {5}%\r\n" +
-                " \r\n", lake.Type, lake.Depth, lake.Weidth, lake.Name, lake.Age, lake.Pollution);
+                lbLakeInfo.Items.Add(lake);
             }
         }
 
@@ -43,9 +40,16 @@ namespace Lab8
             }
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        void lbLakeInfo_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            Lake lake = (Lake)lbLakeInfo.SelectedItem;
+            MessageBox.Show("Имя: " + lake.Name + "\n" +
+                "Вид: " + lake.Type + "\n" +
+                "Глубина: " + lake.Depth + "\n" +
+                "Ширина: " + lake.Weidth + "\n" +
+                "Возраст: " + lake.Age + "\n" +
+                "Загрязненность: " + lake.Pollution + "%",
+                "Информация про озеро", MessageBoxButtons.OK);
         }
     }
 }
