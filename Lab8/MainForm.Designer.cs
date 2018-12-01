@@ -41,7 +41,7 @@ namespace Lab8
             this.btnAddLake.TabIndex = 1;
             this.btnAddLake.Text = "Добавить озеро";
             this.btnAddLake.UseVisualStyleBackColor = true;
-            this.btnAddLake.Click += new System.EventHandler(this.btnAddLake_Click);
+            this.btnAddLake.Click += new System.EventHandler(this.BtnAddLake_Click);
             // 
             // btnClose
             // 
@@ -51,7 +51,7 @@ namespace Lab8
             this.btnClose.TabIndex = 2;
             this.btnClose.Text = "Закрыть";
             this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // lbLakeInfo
             // 
