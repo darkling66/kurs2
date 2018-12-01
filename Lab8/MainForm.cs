@@ -12,27 +12,31 @@ namespace Lab8
 {
     public partial class MainForm : Form
     {
+        private BindingList<Lake> lakes;
+
         public MainForm()
         {
             InitializeComponent();
-            Lake lake = new Lake();
-            List<Lake> lakes = new List<Lake>();
+
+            lakes = new BindingList<Lake>();
+            lbLakeInfo.DataSource = lakes;
             lbLakeInfo.DisplayMember = "Name";
-            lbLakeInfo.ValueMember = "Value";
-            lbLakeInfo.SelectedIndexChanged += lbLakeInfo_SelectedIndexChanged;
+
+            lbLakeInfo.SelectedIndexChanged += new EventHandler(LbLakeInfo_SelectedIndexChanged);
         }
 
-        private void btnAddLake_Click(object sender, EventArgs e)
+        private void BtnAddLake_Click(object sender, EventArgs e)
         {
             Lake lake = new Lake();
             LakeForm lf = new LakeForm(lake);
+
             if(lf.ShowDialog() == DialogResult.OK)
             {
-                lbLakeInfo.Items.Add(lake);
+                lakes.Add(lake);
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void BtnClose_Click(object sender, EventArgs e)
         {
             if(MessageBox.Show("Прекратить роботу?", "Завершение работы", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
@@ -40,16 +44,13 @@ namespace Lab8
             }
         }
 
-        void lbLakeInfo_SelectedIndexChanged(object sender, EventArgs e)
+        void LbLakeInfo_SelectedIndexChanged(object sender, EventArgs e)
         {
             Lake lake = (Lake)lbLakeInfo.SelectedItem;
-            MessageBox.Show("Имя: " + lake.Name + "\n" +
-                "Вид: " + lake.Type + "\n" +
-                "Глубина: " + lake.Depth + "\n" +
-                "Ширина: " + lake.Weidth + "\n" +
-                "Возраст: " + lake.Age + "\n" +
-                "Загрязненность: " + lake.Pollution + "%",
-                "Информация про озеро", MessageBoxButtons.OK);
+            MessageBox.Show("Имя: " + lake.Name + "\nВид: " + lake.Type +
+                "\nГлубина: " + lake.Depth + "\nШирина: " + lake.Weidth +
+                "\nВозраст: " + lake.Age + "\nЗагрязненность: " + lake.Pollution + "%",
+                "Информация про озеро");
         }
     }
 }
