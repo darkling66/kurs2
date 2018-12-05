@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,9 +22,12 @@ namespace Converter
         {
             string from, to;
             double converted;
-            double[] hrivna = { 0.036, 2.36 };
-            double[] dollar = { 27.75, 66.19 };
-            double[] rubl = { 0.015, 0.45 };
+            string UAH1 = @"..\..\UAH_to_USD.txt";
+            string UAH2 = @"..\..\UAH_to_RUB.txt";
+            string USD1 = @"..\..\USD_to_UAH.txt";
+            string USD2 = @"..\..\USD_to_RUB.txt";
+            string RUB1 = @"..\..\RUB_to_USD.txt";
+            string RUB2 = @"..\..\RUB_to_UAH.txt";
             from = comboBox1.SelectedItem.ToString();
             to = comboBox2.SelectedItem.ToString();
             converted = Convert.ToDouble(richTextBox1.Text);
@@ -32,10 +36,10 @@ namespace Converter
                 switch (to)
                 {
                     case "USD":
-                        richTextBox2.Text = Convert.ToString(converted * hrivna[0]);
+                        FileOpen(UAH1);
                         break;
                     case "RUB":
-                        richTextBox2.Text = Convert.ToString(converted * hrivna[1]);
+                        FileOpen(UAH2);
                         break;
                 }
             }
@@ -44,11 +48,11 @@ namespace Converter
                 switch (to)
                 {
                     case "UAH":
-                        richTextBox2.Text = Convert.ToString(converted * dollar[0]);
+                        FileOpen(USD1);
                         break;
                     case "RUB":
-                        richTextBox2.Text = Convert.ToString(converted * dollar[1]);
-                        break;         
+                        FileOpen(USD2);
+                        break;
                 }
             }
             if (from == "RUB")
@@ -56,12 +60,25 @@ namespace Converter
                 switch (to)
                 {
                     case "USD":
-                        richTextBox2.Text = Convert.ToString(converted * rubl[0]);
+                        FileOpen(RUB1);
                         break;
                     case "UAH":
-                        richTextBox2.Text = Convert.ToString(converted * rubl[1]);
+                        FileOpen(RUB2);
                         break;
                 }
+            }
+        }
+
+        private void FileOpen(string s)
+        {
+            using (FileStream fstream = File.OpenRead(s))
+            {
+                double converted;
+                converted = Convert.ToDouble(richTextBox1.Text);
+                byte[] kurs = new byte[fstream.Length];
+                fstream.Read(kurs, 0, kurs.Length);
+                string k = System.Text.Encoding.Default.GetString(kurs);
+                richTextBox2.Text = Convert.ToString(converted * Convert.ToDouble(k));
             }
         }
 
@@ -205,6 +222,15 @@ namespace Converter
         private void buttonComma_Click(object sender, EventArgs e)
         {
             richTextBox1.Text += ",";
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            About about = new About();
+            if (about.ShowDialog() == DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
     }
 }
