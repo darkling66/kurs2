@@ -83,7 +83,7 @@ namespace Converter
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 14;
             this.comboBox1.Text = "USD";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged_1);
             // 
             // comboBox2
             // 
@@ -97,7 +97,7 @@ namespace Converter
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 15;
             this.comboBox2.Text = "UAH";
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
             // 
             // buttonConvert
             // 
@@ -107,7 +107,7 @@ namespace Converter
             this.buttonConvert.TabIndex = 16;
             this.buttonConvert.Text = "Перевести";
             this.buttonConvert.UseVisualStyleBackColor = true;
-            this.buttonConvert.Click += new System.EventHandler(this.button1_Click);
+            this.buttonConvert.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button0
             // 
@@ -118,7 +118,7 @@ namespace Converter
             this.button0.TabIndex = 17;
             this.button0.Text = "0";
             this.button0.UseVisualStyleBackColor = true;
-            this.button0.Click += new System.EventHandler(this.button0_Click);
+            this.button0.Click += new System.EventHandler(this.Button0_Click);
             // 
             // buttonComma
             // 
@@ -129,7 +129,7 @@ namespace Converter
             this.buttonComma.TabIndex = 18;
             this.buttonComma.Text = ",";
             this.buttonComma.UseVisualStyleBackColor = true;
-            this.buttonComma.Click += new System.EventHandler(this.buttonComma_Click);
+            this.buttonComma.Click += new System.EventHandler(this.ButtonComma_Click);
             // 
             // button3
             // 
@@ -140,7 +140,7 @@ namespace Converter
             this.button3.TabIndex = 21;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button2
             // 
@@ -151,7 +151,7 @@ namespace Converter
             this.button2.TabIndex = 20;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button1
             // 
@@ -162,7 +162,7 @@ namespace Converter
             this.button1.TabIndex = 19;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // button6
             // 
@@ -173,7 +173,7 @@ namespace Converter
             this.button6.TabIndex = 24;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // button5
             // 
@@ -184,7 +184,7 @@ namespace Converter
             this.button5.TabIndex = 23;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // button4
             // 
@@ -195,7 +195,7 @@ namespace Converter
             this.button4.TabIndex = 22;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button9
             // 
@@ -206,7 +206,7 @@ namespace Converter
             this.button9.TabIndex = 27;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.Click += new System.EventHandler(this.Button9_Click);
             // 
             // button8
             // 
@@ -217,7 +217,7 @@ namespace Converter
             this.button8.TabIndex = 26;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.Click += new System.EventHandler(this.Button8_Click);
             // 
             // button7
             // 
@@ -228,7 +228,7 @@ namespace Converter
             this.button7.TabIndex = 25;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.Button7_Click);
             // 
             // buttonClear
             // 
@@ -239,7 +239,7 @@ namespace Converter
             this.buttonClear.TabIndex = 28;
             this.buttonClear.Text = "C";
             this.buttonClear.UseVisualStyleBackColor = true;
-            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
+            this.buttonClear.Click += new System.EventHandler(this.ButtonClear_Click);
             // 
             // pictureBox1
             // 
@@ -249,7 +249,7 @@ namespace Converter
             this.pictureBox1.Size = new System.Drawing.Size(19, 21);
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // buttonDelete
             // 
@@ -261,7 +261,7 @@ namespace Converter
             this.buttonDelete.Size = new System.Drawing.Size(116, 38);
             this.buttonDelete.TabIndex = 29;
             this.buttonDelete.UseVisualStyleBackColor = true;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            this.buttonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
             // 
             // ConverterForm
             // 
