@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\Lab_10\bin\Debug\Lab_10.exe.config
+C:\Users\User\source\repos\Lab_10\bin\Debug\Lab_10.exe
+C:\Users\User\source\repos\Lab_10\bin\Debug\Lab_10.pdb
+C:\Users\User\source\repos\Lab_10\obj\Debug\Lab_10.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Lab_10\obj\Debug\Lab_10.MainForm.resources
+C:\Users\User\source\repos\Lab_10\obj\Debug\Lab_10.Properties.Resources.resources
+C:\Users\User\source\repos\Lab_10\obj\Debug\Lab_10.csproj.GenerateResource.Cache
+C:\Users\User\source\repos\Lab_10\obj\Debug\Lab_10.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Lab_10\obj\Debug\Lab_10.exe
+C:\Users\User\source\repos\Lab_10\obj\Debug\Lab_10.pdb
+C:\Users\User\source\repos\Lab_10\obj\Debug\Lab_10.LakeForm.resources
