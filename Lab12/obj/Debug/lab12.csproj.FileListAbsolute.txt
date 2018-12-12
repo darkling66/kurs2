@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\C#\Lab12\obj\Debug\lab12.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\C#\Lab12\obj\Debug\lab_12.MainForm.resources
+C:\Users\User\source\repos\C#\Lab12\obj\Debug\lab12.csproj.GenerateResource.Cache
+C:\Users\User\source\repos\C#\Lab12\obj\Debug\lab 12.exe
+C:\Users\User\source\repos\C#\Lab12\obj\Debug\lab 12.pdb
+C:\Users\User\source\repos\C#\Lab12\obj\Debug\lab_12.Properties.Resources.resources
+C:\Users\User\source\repos\C#\Lab12\obj\Debug\lab12.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\C#\Lab12\bin\Debug\lab 12.exe.config
+C:\Users\User\source\repos\C#\Lab12\bin\Debug\lab 12.exe
+C:\Users\User\source\repos\C#\Lab12\bin\Debug\lab 12.pdb
